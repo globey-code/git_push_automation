@@ -1,85 +1,56 @@
 # 🚀 Git Push Automation
 
-This script automates the process of **staging, committing, and pushing** changes to a **GitHub repository**. It supports both **PowerShell (`git_push_all.ps1`)** and **Python (`git_push_all.py`)**.
+This project automates the process of **staging, committing, and pushing** changes to a **GitHub repository**.  
+It is available in **PowerShell, Python, and C++**, allowing users to choose their preferred implementation.
 
 ---
 
 ## 📌 Features
 ✅ **Automates Git workflow** (add, commit, push)  
-✅ **Automatically installs dependencies** (`gitpython` for Python)  
-✅ **Works on Windows, Mac, and Linux** (Python version)  
-✅ **Bypasses PowerShell script execution restrictions**  
+✅ **Multiple implementations** (PowerShell, Python, and C++)  
+✅ **Cross-platform support** (Windows, Mac, Linux)  
+✅ **Handles execution policy and dependency issues automatically**  
+
+---
+
+## 📂 Available Implementations
+
+| Language | Description | ReadMe |
+|----------|------------|--------|
+| **PowerShell** | Automates Git tasks for Windows users, bypassing execution policies | [README_PowerShell.md](README_PowerShell.md) |
+| **Python** | Portable solution with automatic dependency installation | [README_Python.md](README_Python.md) |
+| **C++** | Fast, standalone version with `libgit2` for native Git operations | [README_C++.md](README_C++.md) |
 
 ---
 
 ## 🔧 Setup & Installation
-
-### **Option 1: Using Python**
-> **Python 3.6+ is required.** If you don’t have Python, [download it here](https://www.python.org/downloads/).
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/git_push_automation.git
-   cd git_push_automation
-   ```
-2. **Run the Python script**:
-   ```bash
-   python git_push_all.py
-   ```
-   - If `gitpython` is not installed, the script **automatically installs it**.
-   - The script will **ask for a commit message** before pushing.
-
----
-
-### **Option 2: Using PowerShell (Windows Only)**
-1. **Open PowerShell and navigate to the folder**:
-   ```powershell
-   cd C:\Users\YourName\Documents\GitHub\git_push_automation
-   ```
-2. **Run the script**:
-   ```powershell
-   .\git_push_all.ps1
-   ```
-   - If execution policy blocks it, the script **creates a batch file** to relaunch in bypass mode.
-   - The script will **ask for a commit message** before pushing.
-
----
-
-## 🚀 Usage
-- **Make sure you are inside a Git repository** before running the script.
-- **Follow the on-screen instructions** to enter a commit message.
-- **Your changes will be pushed to `origin/main` automatically**.
+Refer to the respective **README** files for installation and usage instructions:
+- [PowerShell Version](README_PowerShell.md)
+- [Python Version](README_Python.md)
+- [C++ Version](README_C++.md)
 
 ---
 
 ## 🛠 Troubleshooting
+If you encounter issues, check the troubleshooting sections in the respective README files.
 
-### **PowerShell script won’t run?**
-🔹 Try running manually in Bypass mode:
-```powershell
-powershell -ExecutionPolicy Bypass -File .\git_push_all.ps1
-```
-
-### **Python not installed?**
-🔹 Download Python from [python.org](https://www.python.org/downloads/) and install it.
-
-### **GitPython not installed?**
-🔹 The script will install it automatically, but you can also do it manually:
-```bash
-pip install gitpython
-```
+### **Common Issues**
+- **Git is not installed?** Install Git from [git-scm.com](https://git-scm.com/).
+- **PowerShell execution policy restrictions?** Use `-ExecutionPolicy Bypass`.
+- **Python module missing?** The script automatically installs dependencies.
+- **C++ compilation errors?** Ensure `libgit2` is installed.
 
 ---
 
 ## 🎯 Future Improvements
-- ✅ Add **automatic branch detection**.
-- ✅ Implement **error logging**.
-- ✅ Add **support for multiple remotes**.
+- ✅ Add **branch selection**.
+- ✅ Implement **error handling for push failures**.
+- ✅ Support **multiple remotes**.
 
 ---
 
 ## 📜 License
-MIT License. Feel free to modify and use this script in your projects.
+MIT License. Feel free to modify and use this project in your workflows.
 
 ---
 

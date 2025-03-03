@@ -17,7 +17,7 @@ It **automatically installs `libgit2`** and works on **Windows, Linux, and macOS
 
 ### **Step 1: Clone the Repository**
 ```bash
-git clone https://github.com/your-username/git_push_automation.git
+git clone https://github.com/globey-code/git_push_automation.git
 cd git_push_automation
 ```
 

@@ -129,9 +129,3 @@ MIT License. Feel free to modify and use this script in your projects.
 
 ## ✨ Contributing
 Pull requests are welcome! If you find a bug or have suggestions, **open an issue**.
-
----
-
-## 📩 Contact
-📧 Email: [your-email@example.com](mailto:your-email@example.com)  
-🐙 GitHub: [your-username](https://github.com/your-username)
